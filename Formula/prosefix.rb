@@ -28,9 +28,12 @@ class Prosefix < Formula
     sha256 "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f"
   end
 
+  # spylls' sdist builds with the legacy `poetry>=0.12` backend, which cannot be
+  # built from source here (it pulls in Rust-based build dependencies), so use
+  # the pure-Python wheel.
   resource "spylls" do
-    url "https://files.pythonhosted.org/packages/5c/c2/19f34deb2dc1475dfeadafbd5666246041ee7578bb933e82de794f0a9283/spylls-0.1.7.tar.gz"
-    sha256 "7045892dcbd324d3685f69c5a760063e78fb839913724ce18077cf0a0c93f220"
+    url "https://files.pythonhosted.org/packages/cd/19/ce6fcb4b86e188983bcfc1f84e4ac6f3038ca8d68b6d70a678cdc566f66c/spylls-0.1.7-py2.py3-none-any.whl"
+    sha256 "0c7fa4b66615f390bd12fd37939b85934c012309fd3cce8584844c54270b7776"
   end
 
   resource "stylefix" do

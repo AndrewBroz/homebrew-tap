@@ -13,7 +13,30 @@ class Prosefix < Formula
   depends_on "typos-cli"
   depends_on "vale"
 
-  # resource blocks for adjudicate, stylefix, proofix, spylls, pyyaml (generated)
+  resource "adjudicate" do
+    url "https://files.pythonhosted.org/packages/22/94/9b5198f55bc97ee7ceb5e71c498fe6f106fc16a9b5a9ae8a27955a681c9f/adjudicate-0.3.1.tar.gz"
+    sha256 "f801ccb244c0aa9fb66adace70bba59b9aa774039a36cda9e1a643c51dee38c1"
+  end
+
+  resource "proofix" do
+    url "https://files.pythonhosted.org/packages/7c/95/2aaa575b635b478cca5195674435681eb0a8c111d52d408dbddaa337b93a/proofix-0.6.0.tar.gz"
+    sha256 "bbf066d3109ad3d828c9afc7b276b5d9ed3f71e287e14f33f68607eab62e3d16"
+  end
+
+  resource "pyyaml" do
+    url "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz"
+    sha256 "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f"
+  end
+
+  resource "spylls" do
+    url "https://files.pythonhosted.org/packages/5c/c2/19f34deb2dc1475dfeadafbd5666246041ee7578bb933e82de794f0a9283/spylls-0.1.7.tar.gz"
+    sha256 "7045892dcbd324d3685f69c5a760063e78fb839913724ce18077cf0a0c93f220"
+  end
+
+  resource "stylefix" do
+    url "https://files.pythonhosted.org/packages/f2/3f/9adb197abce3ffa9873450b4c4a26df36499227757a714b19ff49321d803/stylefix-0.8.0.tar.gz"
+    sha256 "0ca8ae136ddd547e1f6581f14285f2d10b0c5aa0a31268efbaf55bd453f8a288"
+  end
 
   def install
     virtualenv_install_with_resources

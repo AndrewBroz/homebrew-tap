@@ -3,8 +3,8 @@ class Prosefix < Formula
 
   desc "Clean, consistent prose in Markdown: spelling, style guide, typos, commas"
   homepage "https://github.com/AndrewBroz/prosefix"
-  url "https://files.pythonhosted.org/packages/14/23/d0f47bb699c128b4661589a4df2d9ac9cad04f4d18f1ee9cbab4d279185f/prosefix-0.1.0.tar.gz"
-  sha256 "bf385dc8c0370f517b66cc81aa34dc720f4cf86848d4cdeed41eb24bef30b405"
+  url "https://files.pythonhosted.org/packages/5c/e6/eade3f6f775ab80f1d6c2e2c58ce6ad76831e6ba0681ce9a7553716cd1ef/prosefix-0.2.0.tar.gz"
+  sha256 "6fcab2484071c610297f3ca4a0fd0372301161e10dab29a5273eda690c1adefe"
   license "MIT"
 
   depends_on "languagetool"
@@ -14,13 +14,13 @@ class Prosefix < Formula
   depends_on "vale"
 
   resource "adjudicate" do
-    url "https://files.pythonhosted.org/packages/22/94/9b5198f55bc97ee7ceb5e71c498fe6f106fc16a9b5a9ae8a27955a681c9f/adjudicate-0.3.1.tar.gz"
-    sha256 "f801ccb244c0aa9fb66adace70bba59b9aa774039a36cda9e1a643c51dee38c1"
+    url "https://files.pythonhosted.org/packages/0e/93/0db9780fda80de710a76e27701084d530bc74215d53fce6b3e4fec5408d8/adjudicate-0.3.2.tar.gz"
+    sha256 "75eccdfc691a9ed1a83b1783a34686f6f9024c07518de382afc93878271e2724"
   end
 
   resource "proofix" do
-    url "https://files.pythonhosted.org/packages/7c/95/2aaa575b635b478cca5195674435681eb0a8c111d52d408dbddaa337b93a/proofix-0.6.0.tar.gz"
-    sha256 "bbf066d3109ad3d828c9afc7b276b5d9ed3f71e287e14f33f68607eab62e3d16"
+    url "https://files.pythonhosted.org/packages/dd/4a/a6ebbee07b84a871267a310d8e7f3a47ee001e1263deb669b396a2324bcc/proofix-0.7.0.tar.gz"
+    sha256 "ca3a63dcab05736d84e0f71f58521b8a17b7028122c94309a9b8a0a7227012ff"
   end
 
   resource "pyyaml" do
@@ -37,8 +37,8 @@ class Prosefix < Formula
   end
 
   resource "stylefix" do
-    url "https://files.pythonhosted.org/packages/f2/3f/9adb197abce3ffa9873450b4c4a26df36499227757a714b19ff49321d803/stylefix-0.8.0.tar.gz"
-    sha256 "0ca8ae136ddd547e1f6581f14285f2d10b0c5aa0a31268efbaf55bd453f8a288"
+    url "https://files.pythonhosted.org/packages/ff/97/58b216b4bd921af05bfc0dc197858c7796d5cc256538b8fd32d3b839f0d2/stylefix-0.8.1.tar.gz"
+    sha256 "31650bc9490e6f8156ccd868a95c2862e531a7d0567ee23dd2c78e608fc720bf"
   end
 
   def install
